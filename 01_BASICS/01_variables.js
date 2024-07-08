@@ -1,3 +1,6 @@
+//*JavaScript is a dynamically typed language. Because data type will automatically assigned at the time of compilation or code execution.
+
+
 const accountId = 144553;
 let acountEmail = "imaruf770@gmail.com"; /* variable decleration */
 var accountPassword = "1234";
