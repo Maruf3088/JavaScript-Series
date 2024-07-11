@@ -45,7 +45,7 @@ console.log(Math.min(2, 3, 1, 5, 1, 6));
 //*---------------------------max method-------------------------------
 console.log(Math.max(2, 3, 1, 5, 1, 6));
 
-// !!----------------------------IMPORTANT--------------------------
+// !!-------------------IMPORTANT(random number generator--------------------------
 console.log(Math.random()); //->random number range(0 to 1)
 console.log(Math.random() * 10); //-> random number range (0 to 9)
 console.log(Math.floor(Math.random() * 10 + 1)); //-> random number range (1 to 9)
