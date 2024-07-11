@@ -26,3 +26,8 @@ console.log(allNewHeros.length); //13
 let numArr = [1, 2, 3, [4, 5, 6], 7, 8, [9, 10, [11, 12]]];
 let fixedArr = numArr.flat(Infinity);
 console.log(fixedArr); //[ 1,2,3,4,5,6,7,8,9,10,11,12]
+
+
+//!_______________SORT() function_____________________
+const newArr = [2,4,3,8,5,9];
+console.log(newArr.sort());
