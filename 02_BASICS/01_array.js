@@ -58,6 +58,16 @@ console.log(`original Array after slicing : ${myArr1}`); //slice method cannot r
 console.log(`---------------Now Splice the array-------------`);
 
 console.log(`original Array before splicing : ${myArr1}`);
-let tempArr1 = myArr1.splice(1, 4); //it splice elements from index 1 to index 4
+let tempArr1 = myArr1.splice(1, 4); //it splice elements from index 1 and delete 4 items including index-1 element
 console.log(`spliced Array : ${tempArr1}`);
 console.log(`original Array after splicing : ${myArr1}`); //splice method can remove elements of spliced array but slice method cannot do that ..and that is the major difference of slice and spice
+
+//!splice function can replace items in array;
+
+let tempArr2 = [2, 4, 1, 6, 7, 8, 4];
+let splicedArr = tempArr2.splice(2,3,"maruf","islam","from","bangladesh");
+console.log(splicedArr);
+console.log(tempArr2);
+console.log(tempArr2.length);
+
+
