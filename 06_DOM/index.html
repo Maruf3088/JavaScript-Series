@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manupulation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: rgb(186, 181, 179);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .box {
+            border: 2px solid tomato;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 35%;
+            border-radius: 15px;
+           
+        }
+
+        .heading {
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .nav-element {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .element {
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .element:hover {
+            color: rgba(255, 99, 71, 0.624);
+            text-decoration: underline;
+        }
+        .paragraph{
+            text-align: center;
+            border: 2px solid tomato;
+            background-color: wheat;
+            border-radius: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="main-box">
+        <h1 class="heading">WELCOME TO MY COURSE</h1>
+        <ul class="nav-element">
+            <li class="element">Home</li>
+            <li class="element">About</li>
+            <li class="element">Blog</li>
+        </ul>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus, porro quia, consequuntur asperiores recusandae neque illum eius, nulla enim odit dolorem impedit! Soluta, repellat porro. Non asperiores et libero?</p>
+    </div>
+
+</body>
+<script>
+    
+</script>
+</html>

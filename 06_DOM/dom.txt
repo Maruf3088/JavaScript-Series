@@ -1,0 +1,6 @@
+Dom Manupulation:
+DOM = Document Object Model
+
+----***Nodelist***----
+
+1. Document.getElementById
