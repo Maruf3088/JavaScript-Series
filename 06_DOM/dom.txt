@@ -3,4 +3,88 @@ DOM = Document Object Model
 
 ----***Nodelist***----
 
-1. Document.getElementById
+1. Document.getElementById('heading')
+
+2.  Document.querySelector('h1')
+    Document.querySelector('.classname')        
+    Document.querySelector('#idname')        
+    Document.querySelector('input[type:"password"]')        
+    Document.querySelector('ul:first-child') 
+
+Example:
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul> 
+
+ const myUl =   Document.querySelector('ul') ***--> first ul selected
+ const turnGreen = myUl.querySelector('li')    ***-->first li (home) selected
+ turnGreen.style.backgroundColor = "green"   
+ turnGreen.style.padding="15px"
+ turnGreen.innerText
+ turnGreen.innerText="portfolio" //home -> exchange to portfolio
+   
+3.  Document.querySelectorAll('h1')
+    Document.querySelectorAll('.classname')        
+    Document.querySelectorAll('#idname')        
+    Document.querySelectorAll('input[type:"password"]')        
+    Document.querySelectorAll('ul:first-child') 
+
+Example:
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul> 
+
+const templist = Document.querySelectorAll('li')
+
+***-->it gives you a nodelist of li ..but it's not array.you can use foreach loop in nodelist
+  
+  templist[0].style.color="white"
+
+***--> it turn color white of the first li element(home).
+
+***-->using foreach loop in nodelist:  
+
+  templist.foreach((list-element)-> {
+    list-element.style.color="green"
+  })
+
+
+
+4. innerText
+5. innerHTML
+6. innerContent
+
+
+7. Document.getElementByClassName('heading')
+Example:
+        <ul>
+            <li class = "list-item" >Home</li>
+            <li class = "list-item" >About</li>
+            <li class = "list-item" >Blog</li>
+        </ul>
+
+const tempLiList = Document.getElementByClassName('list-item')
+
+***--> it gives you a HTMLcollection and you cannot use foreach loop in HTMLcollection.you have to convert HTMLcollection to an array ...after that you can use foreach loop
+
+***-->how to convert HTMLcollection or nodelist in to an array 
+
+const myConvertedArray = Array.from(tempLiList)
+
+***-->now, tempLiList HTMLcollection is converted in an array
+
+***-->using foreach loop in my myConvertedArray... ... ...
+
+myConvertedArray.foreach(function(list-value){
+    list-value.style.color="orange";
+    list-value.style.padding = "15px";
+    list-value.style.border = "1px solid green ";
+} )
+
+
+
+
