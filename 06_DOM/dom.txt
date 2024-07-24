@@ -2,6 +2,7 @@ Dom Manupulation:
 DOM = Document Object Model
 
 ----***Nodelist***----
+----***HTML collection***----
 
 1. Document.getElementById('heading')
 
