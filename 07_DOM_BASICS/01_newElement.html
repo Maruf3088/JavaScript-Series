@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basics</title>
+</head>
+
+<body style="background-color: grey;color: white;">
+    <div class="parent-div">
+        <!-- This is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">thuesday</div>
+        <div class="day">Wednessday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<!-- 
+key words:
+1. document.querySelector('') ->return first element
+2 document.queryselectorAl('')->return a nodelist
+ 
+---- > parent to children < -----
+3. parent.chidren
+3. childen->it return a HTMLcollection you can access by its index
+4. children[1].innerHTML
+5. parent.firstElementChild
+6. parent.lastElementChild
+
+---- > children to parent < -----
+
+7. children .parentElement
+8. children.nesxtElementSibling
+
+---- > Nodelist of parent < ----
+9.parent.childNodes
+
+-->
+<script>
+
+    //---- > parent to children < -----
+    const parentDiv = document.querySelector('.parent-div')
+    console.log(parentDiv);
+    console.log(parentDiv.children) //it return you a htmlcollection
+
+    for (let i = 0; i < parentDiv.children.length; i++) {
+        console.log(parentDiv.children[i].innerHTML);
+        parentDiv.children[i].style.color = 'orange';
+    }
+
+    // console.log(parentDiv.children[0].innerHTML);
+
+    parentDiv.children[1].style.color = 'black';
+    console.log(parentDiv.firstElementChild);
+    console.log(parentDiv.lastElementChild);
+
+    //   ---- > children to parent < -----
+    const childOne = document.querySelector('.day')
+    console.log(childOne);
+    console.log(childOne.parentElement);
+    console.log(childOne.nextElementSibling);
+
+// ---- > Nodelist of parent < ----
+
+    console.log(parentDiv.childNodes);
+
+
+</script>
+
+
+
+
+
+</html>

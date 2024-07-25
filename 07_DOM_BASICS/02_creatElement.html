@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Element By DOM</title>
+</head>
+
+<body style="background-color: grey; color: white;">
+
+</body>
+<!--
+ keywords:
+ 1. documentCreatElement('div')
+ 2. className -> to set class name
+ 3. id -> to set id name
+ 4. setAttribute("class","parent-div")
+ 5. innerText ->to set text in created div
+ 6. document.creatTextNode("your Text")
+ 7. appendChild() ->to show in live server
+ -->
+
+
+
+<script>
+    const parentDiv = document.createElement('div')
+    console.log(parentDiv);
+    parentDiv.className = 'parent-div'
+    parentDiv.id = 'parent-id'
+    parentDiv.setAttribute("title", "div")
+    // parentDiv.innerText = "Welcome To my website"
+    const text = document.createTextNode("Welcome To my Website")
+    parentDiv.appendChild(text)
+    document.body.appendChild(parentDiv)
+    //-----------------------------new Example---------------------------
+    const parentDiv2 = document.createElement('div')
+    parentDiv2.className = 'parent'
+    console.log(parentDiv2);
+    for (let i = 0; i <= 3; i++) {
+        const child = document.createElement('div')
+        // console.log(child);
+        child.className = 'child'
+        const text2 = document.createTextNode("I am a child")
+        child.appendChild(text2)
+        parentDiv2.appendChild(child)
+    }
+    document.body.appendChild(parentDiv2)
+
+</script>
+
+</html>

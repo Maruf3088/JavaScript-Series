@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box-container">
+        <h1 class="heading">BMI Calculator</h1>
+        <p>A BMI calculator assesses body mass index, determining if a person's weight is healthy or unhealthy based on
+            their height.</p>
+        <form action="">
+            <input type="text" placeholder="Height/cm" id="height">
+            <input type="text" placeholder="weight/kg" id="weight">
+            <input type="text" placeholder="Age">
+            <div class="select-1">
+                <select name="" id="">
+                    <option value="Sex">Sex</option>
+                    <option value="Sex">Male</option>
+                    <option value="Sex">Female</option>
+                    <option value="Sex">Prefer Not To Say</option>
+                </select>
+            </div>
+
+           <button class="btn">Calculate</button>
+
+            <input style="display: none;" type="text" placeholder="Your BMI" id="bmi">
+            <input style="display: none;" type="text" placeholder="Your Status" id="status">
+        </form>
+
+        <ul class="details">
+            <li>Below 18.5 <br> <b>Underweight</b></li>
+            <li>18.5 - 24.<br> <b> Healthy</b></li>
+            <li>25.0 - 29.9<br><b>Overweight</b></li>
+            <li>30.0 - and Above<br><b> Obese</b></li>
+        </ul>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
