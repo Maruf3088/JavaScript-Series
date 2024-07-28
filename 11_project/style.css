@@ -47,9 +47,9 @@ body {
 
 .btn:hover {
   border: 2px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  color: rgb(57, 57, 57);
   font-size: 1.1rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(153, 149, 149);
 }
 @media (max-width: 768px) {
   .main {

@@ -13,10 +13,11 @@ const operation = function () {
     body.style.backgroundColor = color;
     color = "#";
   }
-  interval1 = setInterval(colorchanger, 1000);
+  interval1 = setInterval(colorchanger, 500);
 };
 const operation2 = function () {
   clearInterval(interval1);
+  interval1 = null;
 };
 
 start.addEventListener("click", operation);

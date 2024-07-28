@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100vh;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+.main {
+  background-color: black;
+  padding: 20px;
+  border: 2px solid gold;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+}
+.main p {
+  font-size: 1.1rem;
+  /* border: 1px solid red; */
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.701);
+}
+.main input {
+  width: 300px;
+  padding: 10px 15px;
+  outline: none;
+  
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
