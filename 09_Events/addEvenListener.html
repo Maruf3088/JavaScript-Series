@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        gap: 10px;
+    }
+
+    .btn {
+        background-color: orange;
+        color: black;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        font-size: 2rem;
+        transition: all .4s ease;
+        font-weight: 500;
+
+    }
+
+    .btn:hover {
+        color: white;
+        background-color: black;
+        border: 2px solid orange;
+
+    }
+</style>
+
+<body>
+    <button id="btn1" class="btn">click me</button>
+    <button id="btn2" class="btn">MouseOver me</button>
+
+
+
+    <script>
+        //click
+        document.querySelector("#btn1").addEventListener("click", function () { //normal function
+            alert("you clicked")
+        })
+
+
+        // document.querySelector("#btn1").addEventListener("click", () => { //call back function
+        //     alert("you clicked")
+        // })
+
+
+        //mouseover
+        document.querySelector("#btn2").addEventListener("mouseover", function () {
+            alert("Mlouse Overed")
+        })
+    </script>
+
+
+
+</body>
+
+</html>
