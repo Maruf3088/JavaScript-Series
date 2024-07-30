@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scrip, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //to set item in localstorage....key and value both are should in string.
+        // localStorage.setItem("name", "maruf")
+
+        //to get item from the local storage
+        // console.log(localStorage.getItem("name"));
+
+
+        //to set item in localstorage....key and value both are should in string.
+        const arr = ["maruf", "18", "student"];
+        localStorage.setItem("MyData", JSON.stringify(arr))
+        arr.push("raktim")
+        localStorage.setItem("MyData", JSON.stringify(arr))
+
+        const str = "jishan"
+        localStorage.setItem("MyData",str)
+        console.log(typeof localStorage);
+        //to get item from the local storage
+        // console.log(JSON.parse(localStorage.getItem("MyData")))
+
+
+        //to remove item from local storage
+        // localStorage.removeItem("MyData")
+
+        /*
+        1. local storage.setItem("key","value")"-> string key ,value accept kore....array ,object accept kore nh 
+        so, data jdi string e nh hole seta k JSON.stringify deye protom e string e convert krte hbe...than localstorage.setItem use krte hbe
+
+        2. localStorage.getItem("key") -> string return kore ..than JSON.parse deye amdr original format e convert kore nete hoi
+
+        3. locl storage teke jdi item delete krte hoi taile localstorage.removeItem("key") 
+
+        any kind -> string = JSON.stringify(any kind)
+        string -> any kind = JSON.parse(string)
+        */
+    </script>
+</body>
+
+</html>
