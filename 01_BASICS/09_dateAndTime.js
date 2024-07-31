@@ -59,6 +59,7 @@ march ->2
 april ->3
 may ->4
 ..... -> ....
+december -> 11
 */
 //!------------------EXTRA_MORE_FUNCTION_________________________
 todayDate.toLocaleString("default", {

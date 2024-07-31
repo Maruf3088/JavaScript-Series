@@ -8,7 +8,7 @@ const result = arr.filter((val, index, arr) => {
   return arr.indexOf(val) == index;
 });
 
-console.log(result);
+// console.log(result);
 
 //!Method - 02 get ubique element from an array by using reduce
 const arr2 = ["apple", "mango", "lichi", "mango", "lichi", "banana"];
